@@ -238,9 +238,7 @@ deploy-files = (cb) ->
       fs.readFileSync "#__dirname/www/index.html"
       \cp1250
 
-  script = iconv.encode do
-    fs.readFileSync "#__dirname/www/script.js"
-    \cp1250
+  script = fs.readFileSync "#__dirname/www/script.js"
   fs.writeFileSync do
     "#__dirname/www/azure/mafra-babis.js"
     script
