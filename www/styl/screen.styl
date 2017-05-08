@@ -1,0 +1,81 @@
+@import colors
+@import prefixes
+@import 'components/triangle'
+
+.ig
+  @import basics
+
+.ig
+  float left
+  width 100%
+  clear left
+  svg
+    float left
+    border 1px dotted #c
+    margin-top -1px
+    margin-left -1px
+    .medium-name
+      fill black
+      font-weight bold
+    path.line
+    line
+      fill none
+    line
+      shape-rendering crispEdges
+      opacity 0.3
+    &:nth-child(1)
+    &:nth-child(2)
+    &:nth-child(3)
+      path.line
+      line
+        stroke #08306b
+      path.area
+        fill #4292c6
+    &:nth-child(4)
+    &:nth-child(5)
+      path.line
+      line
+        stroke #800026
+      path.area
+        fill #fc4e2a
+    &:nth-child(6)
+    &:nth-child(7)
+      path.line
+      line
+        stroke #67000d
+      path.area
+        fill #ef3b2c
+    &:nth-child(8)
+    &:nth-child(9)
+      path.line
+      line
+        stroke #023858
+      path.area
+        fill #0570b0
+    &:nth-child(10)
+      path.line
+      line
+        stroke #00441b
+      path.area
+        fill #41ab5d
+
+    &:nth-child(4)
+      clear left
+    &:nth-child(6)
+      clear left
+    &:nth-child(8)
+      clear left
+    &:nth-child(10)
+      clear left
+    g.guidelines
+      line
+        stroke black
+        &:nth-child(2)
+        &:nth-child(3)
+          stroke-dasharray 2, 4
+        &:nth-child(1)
+        &:nth-child(4)
+          stroke-dasharray 2, 2
+    g.voronoi
+      path
+        fill transparent
